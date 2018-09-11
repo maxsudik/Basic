@@ -1,0 +1,10 @@
+
+//2)Using for method description connected to the object
+
+
+public class Executor{
+
+    public void settingValues(Cars car)
+
+    //Method explanation
+}

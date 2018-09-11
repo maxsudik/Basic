@@ -1,0 +1,38 @@
+
+
+
+public static void ifStatement(){
+
+if (boolean-expression) {
+        // Execute if boolean-expression is true
+    } else {
+        // Execute if boolean-expression is false
+    }
+}
+
+public static void IfThenElseStatement(){
+    if (boolean-expression) {
+        // Execute if boolean-expression one is true
+    } else if (boolean-expression2) {
+        // Execute if boolean-expression two is true
+    } else {
+        // Execute if boolean-expression is false
+    }
+}
+
+public static void switchStatement{
+
+    switch(expression){
+        case value1:
+		//Execute if the variable is matched with the case (value1)
+        break;
+        case value2:
+		//Execute if the variable is matched with the case (value2)
+        break;
+        default:
+		//Execute if the variable is not matched with the any case
+		break;
+          }
+
+}
+

@@ -1,0 +1,22 @@
+
+
+public class Car {
+	//Class Member Variables & Fields
+	String iModel;
+    int iDoors;
+
+
+    //Default values set in Constructor
+    public Car(){
+    	iModel = "Camry";
+
+    }
+
+    public void PrintResults(){
+
+        System.out.println("Model is:" + iModel);
+        System.out.println("Number of doors is:" +iDoors);
+
+    }
+
+}

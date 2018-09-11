@@ -1,0 +1,12 @@
+
+
+	public class TestStaticModifiers {
+	public static void main(String[] args) {
+
+		Car Toyota = new Car();
+		Toyota.sModel="Camry";
+        Toyota.iHighestSpeed = 230;
+        Toyota.iSteering = 2; //Compile time error
+        Car.iWheels = 6; //Compile time error
+		}
+	}
