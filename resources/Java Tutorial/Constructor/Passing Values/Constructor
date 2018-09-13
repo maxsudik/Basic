@@ -1,0 +1,23 @@
+
+
+
+public class Car {
+
+	//Class Member Variables & Fields
+	String iModel;
+	int iDoors;
+
+    //Constructor with values passed
+    public Car (String Model) {
+    	iModel = Model;
+    }
+
+    //Method
+    public void PrintResults(){
+
+    System.out.println("Model is:" + iModel);
+    System.out.println("Number of doors is:" +iDoors);
+
+    }
+
+}

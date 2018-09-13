@@ -1,0 +1,30 @@
+public class Child implements Parent, GrandParent{
+
+//Parent Methods
+public void firstMethod(){
+//Method
+}
+
+public void secondMethod(){
+//Method
+}
+
+public void thirdMethod(){
+//Method
+}
+
+//Child Methods
+public void childNewMethodOne(){
+//Method
+}
+
+public void childNewMethodTwo(){
+//Method
+}
+
+//GrandParent method
+public void grandMethodOne(){
+//Method
+}
+
+}

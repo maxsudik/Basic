@@ -1,0 +1,22 @@
+public class MethodOverloading{
+
+public static void main(String[] args){
+MethodOverloading obj = new MethodOverloading();
+
+obj.sum();
+obj.sum(10);
+obj.sum(10, 5);
+}
+
+public void sum(){
+System.out.println("Sum method, o parameter");
+}
+
+public void sum(int i){
+System.out.println("Sum method, i parameter");
+}
+
+public void sum(int k, int l){
+System.out.println("Sum method, k, l parameters")
+}
+}

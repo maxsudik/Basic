@@ -1,0 +1,44 @@
+class CallByValueByRef{
+
+int p;
+int q;
+
+public static void main(String[] args){
+
+CallByValueByRef obj = new CallByValueByRef();
+int x = 10;
+int y = 20;
+
+obj.testSumm(x,y); //call by value or pass by value
+
+
+//Call by reference
+obj.p = 50;
+obj.q = 60;
+
+obj.swap(obj);
+//after swap
+System.out.println(obj.p);
+System.out.println(obj.q);
+
+}
+
+
+public int testSumm(int a, int b){
+
+a=30;
+b=40;
+int c = a+b;
+return c;
+}
+
+//Call by reference
+public void swap(CallByValueByRef t){
+
+temp = t.p;
+t.p = t.q;
+t.q = temp;
+
+}
+
+}

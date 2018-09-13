@@ -1,0 +1,91 @@
+//Add delay 3 sec
+    try {
+    Thread.sleep(3000);
+    } catch (InterruptedException e) {
+    e.printStackTrace();
+    }
+
+
+    //Clear the field
+    element.click();
+    element.sendKeys(Keys.chord(Keys.COMMAND, "a"));
+    element.sendKeys(Keys.DELETE);
+
+
+    //Find
+    element = driver.findElement(By.xpath(""));
+    //Click
+    element.click();
+
+
+    //Find
+    element = ((FirefoxDriver) driver).findElementByXPath("");
+    //Enter
+    element.sendKeys("");
+
+
+    //Check Manager was created
+    WebElement body = driver.findElement(By.tagName("body"));
+    boolean ret = body.getText().contains("Success!");
+    System.out.println(ret);
+
+
+    //Find Log Out button
+    element = ((FirefoxDriver) driver).findElementByXPath("//span[contains(text(),'Log Out')]");
+    //Click Log Out button
+    element.click();
+    //Close browser window
+    driver.quit();
+
+
+    //Set Size and Position
+    driver.manage().window().setSize(new Dimension(800,650));
+    driver.manage().window().setPosition(new Point(0,0));
+
+
+    //Select item DDL
+    Select methodName = new Select(driver.findElement(By.xpath("*xpath*")));
+    methodName.selectByVisibleText("*TEXT*");
+
+	//Selecting Items in a Multiple SELECT elements
+	Select methodName = new Select(driver.findElement(By.xpath("*xpath*")));
+	if (methodName.isMultiple()){
+	methodName.selectByVisibleText("Banana");
+    methodName.selectByIndex(1);
+	}
+
+	    private WebDriver driver;
+
+        @Parameters({"browser"})
+        @BeforeTest
+
+        public void openBrowser(String browser) {
+
+            try {
+                if (browser.equalsIgnoreCase("Chrome")) {
+                    System.setProperty("webdriver.chrome.driver", "src/chromedriver");
+                    driver = new ChromeDriver();
+                    driver.manage().window().setSize(new Dimension(1280, 720));
+                    driver.manage().window().setPosition(new Point(0, 0));
+
+                } else if (browser.equalsIgnoreCase("Firefox")) {
+                    System.setProperty("webdriver.gecko.driver", "src/geckodriver");
+                    driver = new FirefoxDriver();
+                    driver.manage().window().setSize(new Dimension(1280, 720));
+                    driver.manage().window().setPosition(new Point(1280, 0));
+                } else if (browser.equalsIgnoreCase("Safari")) {
+                    driver = new SafariDriver();
+                    driver.manage().window().setSize(new Dimension(1280, 720));
+                    driver.manage().window().setPosition(new Point(0, 1280));
+                }
+
+            } catch (WebDriverException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+    WebDriverWait wait = new WebDriverWait(driver, 20);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
+
+    getDriver().switchTo().alert().accept();
+    getDriver().switchTo().alert().dismiss();

@@ -1,0 +1,11 @@
+public class BMW extends Car{
+
+//Method overriding
+public static start {
+System.out.println("BMW start")
+}
+
+public static theftSafety {
+System.out.println("BMW theftSafety")
+}
+}
