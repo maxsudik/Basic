@@ -8,7 +8,7 @@ public class Car {
 
     //Default values set in Constructor
     public Car(){
-    	iModel = "Camry";
+    iModel = "Camry";
 
     }
 

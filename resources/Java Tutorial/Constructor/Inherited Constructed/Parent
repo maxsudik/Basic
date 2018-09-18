@@ -1,0 +1,10 @@
+class Parent{
+
+public Parent(){
+System.out.println("Parent class");
+}
+
+public Parent(int i){
+System.out.println("parent class constructor using super keyword")
+}
+}

@@ -1,0 +1,39 @@
+public class StaticAndNonStaticConcept{
+
+String name = "Tom";
+static int age = 25;
+
+public static void main (String[] args){
+
+//Static
+
+//1) Directly
+sum();
+
+//2) Using class name
+StaticAndNonStaticConcept.sum();
+
+//3) Access global variables
+StaticAndNonStaticConcept.age;
+
+//Non static
+StaticAndNonStaticConcept obj = new StaticAndNonStaticConcept();
+obj.sendMail();
+obj.name;
+
+}
+
+public void sendMail(){
+
+System.out.println("send mail method");
+
+}
+
+public static void sum(){
+
+System.out.println("Sum method");
+
+}
+
+
+}

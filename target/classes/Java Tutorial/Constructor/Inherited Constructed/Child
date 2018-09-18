@@ -1,0 +1,21 @@
+class Child extends Parent{
+
+public Child(){
+super(10);
+System.out.println("Child class");
+}
+
+public static void main(String[] args){
+Child child = new Child();
+}
+}
+
+//Output if there is no super keyword
+//******
+//Parent class
+//Child class
+
+//Output if super keyword is used
+//******
+//parent class constructor using super keyword
+//Child class

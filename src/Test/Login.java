@@ -1,3 +1,5 @@
+package Test;
+
 import Main.Panels.LoginPanel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

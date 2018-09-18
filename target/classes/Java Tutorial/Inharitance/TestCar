@@ -1,0 +1,23 @@
+public class TestCar{
+
+public static void main(String[] args){
+
+
+//static polimorphism - compile polimorphism
+//Can be used parents methods or overwriten methods
+BMW bmw = new BMW;
+bmw.start(); //uses child method
+
+//Can be used only parent methods
+Car car = new Car();
+car.start(); //uses parent method
+car.stop(); //uses parent method
+car.refuel(); //uses parent method
+
+//Can be used only overwriten methods or parent methods
+Car car1 = new BMW(); //child class object can be referred by parent class reference variable - dynamic polymorphism
+car1.start(); //child method
+car1.stop(); //parent class
+car1.refuel(); //child class
+}
+}

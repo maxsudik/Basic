@@ -54,35 +54,7 @@
     methodName.selectByIndex(1);
 	}
 
-	    private WebDriver driver;
 
-        @Parameters({"browser"})
-        @BeforeTest
-
-        public void openBrowser(String browser) {
-
-            try {
-                if (browser.equalsIgnoreCase("Chrome")) {
-                    System.setProperty("webdriver.chrome.driver", "src/chromedriver");
-                    driver = new ChromeDriver();
-                    driver.manage().window().setSize(new Dimension(1280, 720));
-                    driver.manage().window().setPosition(new Point(0, 0));
-
-                } else if (browser.equalsIgnoreCase("Firefox")) {
-                    System.setProperty("webdriver.gecko.driver", "src/geckodriver");
-                    driver = new FirefoxDriver();
-                    driver.manage().window().setSize(new Dimension(1280, 720));
-                    driver.manage().window().setPosition(new Point(1280, 0));
-                } else if (browser.equalsIgnoreCase("Safari")) {
-                    driver = new SafariDriver();
-                    driver.manage().window().setSize(new Dimension(1280, 720));
-                    driver.manage().window().setPosition(new Point(0, 1280));
-                }
-
-            } catch (WebDriverException e) {
-                System.out.println(e.getMessage());
-            }
-        }
 
     WebDriverWait wait = new WebDriverWait(driver, 20);
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));

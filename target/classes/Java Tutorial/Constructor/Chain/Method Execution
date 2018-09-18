@@ -6,5 +6,6 @@ public class Executor{
 
     public void settingValues(Cars car)
 
-    //Method explanation
+    Helper.setField(locator, car.model);
+    Helper.setField(locator, car.doors);
 }
