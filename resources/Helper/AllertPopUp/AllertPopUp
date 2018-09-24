@@ -1,0 +1,9 @@
+public class AllerPopUp(){
+        driver.get("URL");
+        driver.findElement(By.id("ID"));
+        Alert alert = driver.switchTo().alert();
+        System.out.println(alert.getText());
+        alert.accept();
+        //or
+        alert.dismiss();
+}

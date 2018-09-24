@@ -1,0 +1,14 @@
+public class WaitMethods{
+
+
+//Add delay 3 sec
+    try {
+    Thread.sleep(3000);
+    } catch (InterruptedException e) {
+    e.printStackTrace();
+    }
+
+    //Excplicit wait
+    WebDriverWait wait = new WebDriverWait(driver, 20);
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
+}
