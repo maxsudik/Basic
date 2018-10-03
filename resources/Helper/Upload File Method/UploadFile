@@ -1,0 +1,6 @@
+public class UploadFile{
+WebDriver driver = new WebDriver()
+driver = ChromeDriver();
+driver.ger("URL");
+driver.findElement(By.xpath("xpath")).sendKeys("pathToFile");
+}

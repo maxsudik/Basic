@@ -1,12 +1,4 @@
-package Test;
 
-import org.testng.annotations.Test;
-
-public class Array {
-
-
-
-@Test
     public static void invertUsingFor() {
         String [] array = {"a","b","c"};
         int iLength = array.length;
@@ -22,5 +14,3 @@ public class Array {
 
         for (int i=0; i<=iLength-1; i++ )
         System.out.println(array[i]);
-    }
-}

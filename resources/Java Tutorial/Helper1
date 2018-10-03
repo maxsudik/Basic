@@ -12,17 +12,6 @@
     element.sendKeys(Keys.DELETE);
 
 
-    //Find
-    element = driver.findElement(By.xpath(""));
-    //Click
-    element.click();
-
-
-    //Find
-    element = ((FirefoxDriver) driver).findElementByXPath("");
-    //Enter
-    element.sendKeys("");
-
 
     //Check Manager was created
     WebElement body = driver.findElement(By.tagName("body"));
@@ -30,34 +19,6 @@
     System.out.println(ret);
 
 
-    //Find Log Out button
-    element = ((FirefoxDriver) driver).findElementByXPath("//span[contains(text(),'Log Out')]");
-    //Click Log Out button
-    element.click();
-    //Close browser window
-    driver.quit();
-
-
-    //Set Size and Position
-    driver.manage().window().setSize(new Dimension(800,650));
-    driver.manage().window().setPosition(new Point(0,0));
-
-
-    //Select item DDL
-    Select methodName = new Select(driver.findElement(By.xpath("*xpath*")));
-    methodName.selectByVisibleText("*TEXT*");
-
-	//Selecting Items in a Multiple SELECT elements
-	Select methodName = new Select(driver.findElement(By.xpath("*xpath*")));
-	if (methodName.isMultiple()){
-	methodName.selectByVisibleText("Banana");
-    methodName.selectByIndex(1);
-	}
-
-
 
     WebDriverWait wait = new WebDriverWait(driver, 20);
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
-
-    getDriver().switchTo().alert().accept();
-    getDriver().switchTo().alert().dismiss();

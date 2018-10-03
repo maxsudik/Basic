@@ -1,6 +1,9 @@
 package Test;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -8,6 +11,7 @@ import org.testng.annotations.Test;
 public class Launch {
 
     static WebDriver driver;
+
 
     @BeforeTest
     public static void capabilities(){
@@ -38,6 +42,12 @@ public class Launch {
             System.out.println("URL " +URL+ " is not correct");
         }
 
+        driver.findElement(By.id("user_session_username")).sendKeys("testing121");
+
+        driver.findElement(By.id("user_session_password")).sendKeys("Letmein1234!");
+
+        driver.findElement(By.xpath("//input[@value='Login']")).click();
+        
         driver.quit();
     }
 
