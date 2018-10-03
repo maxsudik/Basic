@@ -55,6 +55,7 @@
     <session id="-2092002616">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -357,7 +358,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536913271530" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536973237506" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -564,7 +565,7 @@
       <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49891067" weight="0.32744783" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3282504" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3282504" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
